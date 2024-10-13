@@ -1,0 +1,12 @@
+:root {
+	--color-primary: #2d5627; /* Main brand color */
+	--color-secondary: #ffcc00; /* Secondary brand color */
+	--color-background: #2c2b2b; /* Background color */
+	--color-text-primary: #fff; /* Main text color */
+	--color-text-secondary: #000; /* Secondary text color */
+	--color-accent: #4a90e2; /* Accent color for buttons, links */
+	--font-family-primary: "roboto Slab", "Helvetica Neue", Helvetica, Arial;
+	--font-family-secondary: "Helvetica Neue", Helvetica, Arial;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
