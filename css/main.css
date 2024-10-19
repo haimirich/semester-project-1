@@ -29,3 +29,46 @@
 		text-align: center;
 	}
 }
+
+.card {
+	div:nth-child(1) {
+		background: url(/img/scientific-2040795_1280.jpg) darkblue;
+		height: 150px;
+	}
+}
+
+/* --- Chat with Chat GPT to do it fastern --- */
+
+ul li:nth-child(1) h3 {
+	color: #ff8a8a;
+} /* Red */
+ul li:nth-child(2) h3 {
+	color: #ffb366;
+} /* Orange */
+ul li:nth-child(3) h3 {
+	color: #ffde88;
+} /* Yellow */
+ul li:nth-child(4) h3 {
+	color: #bfff72;
+} /* Lime Green */
+ul li:nth-child(5) h3 {
+	color: #8aff8c;
+} /* Green */
+ul li:nth-child(6) h3 {
+	color: #6effe3;
+} /* Cyan */
+ul li:nth-child(7) h3 {
+	color: #7fd9ff;
+} /* Sky Blue */
+ul li:nth-child(8) h3 {
+	color: #7aafff;
+} /* Blue */
+ul li:nth-child(9) h3 {
+	color: #9488ff;
+} /* Indigo */
+ul li:nth-child(10) h3 {
+	color: #cc8eff;
+} /* Violet */
+ul li:nth-child(11) h3 {
+	color: #ff85c6;
+} /* Magenta */
