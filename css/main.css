@@ -195,3 +195,48 @@ textarea {
 	text-align: left;
 	margin: 60px 0 20px;
 }
+
+/* --- Contribution --- */
+.contribution {
+	div {
+		margin-top: 20px;
+		text-align: center;
+	}
+	button {
+		border: 5px solid var(--color-accent);
+		border-radius: 25px;
+		width: 200px;
+		height: 75px;
+		font-size: 25px;
+		background-color: var(--color-background);
+		color: var(--color-text-primary);
+		position: absolute;
+		bottom: 25px;
+		right: 25px;
+	}
+	a {
+		color: var(--color-text-primary);
+		margin: 20px;
+	}
+}
+
+.donate {
+	background: linear-gradient(to bottom, rgba(32, 0, 0, 1) 0%, rgba(23, 2, 2, 0.67) 30%, rgba(0, 0, 0, 0) 50%), url(/img/roberto-nickson-396152.jpg) no-repeat;
+}
+.volunteer {
+	background: linear-gradient(to bottom, rgba(32, 0, 0, 1) 0%, rgba(23, 2, 2, 0.67) 30%, rgba(0, 0, 0, 0) 50%), url(/img/luke-ellis-craven-400722.jpg) no-repeat;
+}
+
+.internship {
+	background: linear-gradient(to bottom, rgba(32, 0, 0, 1) 0%, rgba(23, 2, 2, 0.67) 30%, rgba(0, 0, 0, 0) 50%), url(/img/samuel-zeller-158996.jpg) no-repeat;
+}
+.donate,
+.volunteer,
+.internship {
+	position: relative;
+	margin: 20px 0;
+	padding: 20px;
+	height: 550px;
+	background-size: cover;
+	background-position: center;
+}
