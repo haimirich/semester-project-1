@@ -235,7 +235,42 @@ textarea {
 	}
 	a {
 		color: var(--color-text-primary);
-		margin: 20px;
+		margin: 10px;
+	}
+}
+@media only screen and (min-width: 450px) {
+	.contribution {
+		a {
+			margin: 20px;
+		}
+	}
+}
+@media only screen and (min-width: 600px) {
+	.contribution {
+		a {
+			margin: 30px;
+		}
+	}
+}
+@media only screen and (min-width: 800px) {
+	.contribution {
+		a {
+			margin: 40px;
+		}
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.contribution {
+		a {
+			margin: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.contribution {
+		a {
+			margin: 60px;
+		}
 	}
 }
 
