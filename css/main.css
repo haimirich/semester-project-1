@@ -32,6 +32,7 @@ nav {
 	background: #444;
 	top: 70px;
 	width: 100%;
+	z-index: 1000;
 	a {
 		display: block;
 		color: #ffcc00;
