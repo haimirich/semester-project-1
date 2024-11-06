@@ -2,6 +2,7 @@
 	--color-primary: #2d5627; /* Main brand color */
 	--color-secondary: #ffcc00; /* Secondary brand color */
 	--color-background: #2c2b2b; /* Background color */
+	--color-background-accent: #444444;
 	--color-text-primary: #fff; /* Main text color */
 	--color-text-secondary: #000; /* Secondary text color */
 	--color-accent: #4a90e2; /* Accent color for buttons, links */

@@ -26,7 +26,7 @@ header {
 		display: none;
 	}
 }
-nav {
+header nav {
 	display: none;
 	position: absolute;
 	background: #444;
@@ -130,7 +130,100 @@ nav {
 		background: url(/img/learn-2405206_1920.jpg) darkblue;
 	}
 }
+@media only screen and (min-width: 450px) {
+	.offer {
+		img {
+			height: 250px;
+		}
+	}
 
+	.event .card {
+		div:nth-child(1) {
+			height: 250px;
+		}
+	}
+
+	.exhibitions .card {
+		div:nth-child(1) {
+			height: 250px;
+		}
+	}
+}
+@media only screen and (min-width: 600px) {
+	.offer {
+		img {
+			height: 300px;
+		}
+	}
+
+	.event .card {
+		div:nth-child(1) {
+			height: 300px;
+		}
+	}
+
+	.exhibitions .card {
+		div:nth-child(1) {
+			height: 300px;
+		}
+	}
+}
+@media only screen and (min-width: 800px) {
+	.home {
+		li {
+			height: 250px;
+		}
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 40px;
+		}
+		.card {
+			margin: 0;
+		}
+		.offer {
+			img {
+				height: 250px;
+				margin: 0;
+			}
+		}
+
+		.event .card {
+			div:nth-child(1) {
+				height: 250px;
+			}
+		}
+
+		.exhibitions .card {
+			div:nth-child(1) {
+				height: 250px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.hero img {
+		max-height: 400px;
+	}
+	h2 {
+		margin: 60px auto 40px auto;
+	}
+	section {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	body {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	.offer,
+	.event,
+	.exhibitions {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
 /* --- Chat with Chat GPT to do it fastern --- */
 
 ul li:nth-child(1) h3 {
@@ -311,7 +404,28 @@ textarea {
 		background-color: black;
 	}
 }
-
+@media only screen and (min-width: 800px) {
+	.exhibition {
+		li {
+			width: fit-content;
+			margin: 0;
+		}
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.exhibition {
+		ul {
+			grid-template-columns: 1fr 1fr 1fr;
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+	}
+}
 /* --- Privacy Policy --- */
 
 .document {
@@ -323,5 +437,59 @@ textarea {
 	}
 	h3 {
 		font-size: 25px;
+	}
+}
+
+/* --- Footer --- */
+
+footer {
+	background-color: var(--color-background-accent);
+	padding: 20px;
+	text-align: center;
+	margin-top: 40px;
+	h2 {
+		font-size: 30px;
+	}
+	span {
+		font-size: 20px;
+	}
+	hr {
+		color: var(--color-text-primary);
+		margin: 40px;
+	}
+	a {
+		color: var(--color-text-primary);
+	}
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px 20px;
+		margin: 40px auto;
+	}
+	li {
+		width: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 600px) {
+	footer {
+		ul {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+}
+@media only screen and (min-width: 800px) {
+	footer {
+		max-width: 1600px;
+		margin: 40px auto 0 auto;
+		h2 {
+			font-size: 40px;
+		}
+		span {
+			font-size: 30px;
+		}
+		a {
+			font-size: 30px;
+		}
 	}
 }
