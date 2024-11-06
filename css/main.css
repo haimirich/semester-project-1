@@ -493,3 +493,23 @@ footer {
 		}
 	}
 }
+
+/* --- About Us --- */
+
+.about_us {
+	h3 {
+		text-align: left;
+		text-decoration: underline;
+	}
+	hr {
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.about_us {
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
