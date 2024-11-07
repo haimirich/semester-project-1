@@ -25,34 +25,34 @@ header {
 	#menu-checkbox {
 		display: none;
 	}
-}
-header nav {
-	display: none;
-	position: absolute;
-	background: #444;
-	top: 70px;
-	width: 100%;
-	z-index: 1000;
-	a {
-		display: block;
-		color: #ffcc00;
-		padding: 10px 20px;
-	}
-	ul {
-		list-style-type: none;
-		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	li {
-		padding: 0 10px;
-		width: fit-content;
-	}
-}
-@media only screen and (max-width: 800px) {
 	nav {
+		display: none;
+		position: absolute;
+		background: #444;
+		top: 70px;
+		width: 100%;
+		z-index: 1000;
+		a {
+			display: block;
+			color: #ffcc00;
+			padding: 10px 20px;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
 		li {
 			padding: 0 10px;
+			width: fit-content;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	header nav {
+		li {
 			text-align: left;
 			width: 150px;
 		}
