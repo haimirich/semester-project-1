@@ -547,5 +547,34 @@ footer {
 		img {
 			object-position: center bottom;
 		}
+		.hours {
+			ul {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+/* --- Hours --- */
+
+.hours {
+	text-align: left;
+	max-width: 600px;
+	hr {
+		margin: 15px;
+	}
+	span {
+		width: 100px;
+	}
+	li {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.hours {
+		ul {
+			grid-template-columns: 1fr;
+		}
 	}
 }
