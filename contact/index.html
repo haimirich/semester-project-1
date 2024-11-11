@@ -9,8 +9,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="/css/typhography.css" />
 		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="shortcut icon" href="../img/open-science-735787.jpg" type="image/x-icon" />
+		<meta name="description" content="Contact the Community Science Museum for inquiries, guided tours, or more information about our exhibits. Visit us today!" />
+		<meta name="keywords" content="contact, museum, guided tours, science museum, oslo, free admission" />
+
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-		<title>Document</title>
+		<title>Contact | Community Science Museum</title>
 	</head>
 	<body>
 		<header>
@@ -42,15 +46,15 @@
 				<!-- Add Contact Form Here -->
 				<form>
 					<label for="name"><h3>Name</h3></label>
-					<input type="text" id="name" name="name" /><br />
+					<input type="text" id="name" name="name" required aria-required="true" aria-label="Your Name" /><br />
 
 					<label for="mail"><h3>Mail</h3></label>
-					<input type="text" id="mail" name="mail" /><br />
+					<input type="text" id="mail" name="mail" required aria-required="true" aria-label="Your Email" /><br />
 					<label for="phone"><h3>Phone</h3></label>
-					<input type="text" id="phone" name="phone" /> <br />
+					<input type="text" id="phone" name="phone" required aria-required="true" aria-label="Your Phone Number" /> <br />
 					<label for="message"><h3 class="message">Message</h3></label> <br />
-					<textarea id="message" name="message" rows="4" cols="50"></textarea>
-					<input type="submit" />
+					<textarea id="message" name="message" rows="4" cols="50" required aria-required="true" aria-label="Your Message"></textarea>
+					<input type="submit" value="Send Message" />
 				</form>
 			</section>
 			<section class="visit">
