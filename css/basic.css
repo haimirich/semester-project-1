@@ -1,10 +1,10 @@
 * {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 p {
@@ -22,14 +22,31 @@ body {
 section {
 	padding: 0 15px;
 }
-
+button,
+input[type="submit"],
+.card {
+	transition: transform 0.2s;
+}
+button:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	color: var(--color-background);
+	border: 2px solid black;
+	background-color: var(--color-text-primary);
+	cursor: pointer;
+}
+input[type="submit"]:focus {
+	background-color: rgb(214, 214, 220);
+}
+/* --- Header img --- */
 .header_img {
 	border-bottom: 3px solid var(--color-text-primary);
 	height: 250px;
 	width: 100%;
 	object-fit: cover;
 	object-position: center top;
-	
 }
 @media only screen and (min-width: 450px) {
 	.header_img {
@@ -54,11 +71,11 @@ section {
 .logo {
 	max-width: 70px;
 	height: 70px;
-
 }
 .card {
 	margin: 50px auto;
 	border-radius: 10px;
+
 	overflow: hidden; /*https://stackoverflow.com/questions/62759278/element-with-border-radius-inside-element-with-border-radius-is-not-consistent*/
 
 	div:nth-child(1) {
@@ -87,5 +104,7 @@ section {
 		margin: 0;
 	}
 }
-/*
-
+.card:hover {
+	transform: scale(1.02);
+	cursor: pointer;
+}

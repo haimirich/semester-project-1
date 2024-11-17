@@ -11,6 +11,12 @@ header {
 	color: white;
 	padding-right: 15px;
 
+	#menu-checkbox {
+		display: none;
+	}
+	label {
+		margin: 0;
+	}
 	label span {
 		display: block; /* to ensure that each span element occupies its own line. */
 		width: 40px;
@@ -18,12 +24,6 @@ header {
 		margin: 8px 0; /* create some spacing between the span elements. */
 		background: var(--color-text-primary);
 		border-radius: 3px;
-	}
-	label {
-		margin: 0;
-	}
-	#menu-checkbox {
-		display: none;
 	}
 	nav {
 		display: none;
@@ -73,14 +73,14 @@ header {
 
 /* --- Home Page --- */
 
-.hero img {
-	max-height: 300px;
-	object-fit: cover;
-	width: 100%;
-}
 .hero {
 	padding: 0;
 	margin: 0 auto;
+	img {
+		max-height: 300px;
+		object-fit: cover;
+		width: 100%;
+	}
 }
 
 .offer {
@@ -93,7 +93,8 @@ header {
 	li {
 		position: relative;
 	}
-	a {
+	button {
+		border-top: 0;
 		text-decoration: none;
 		position: absolute;
 		top: 0px;
@@ -107,37 +108,28 @@ header {
 		border-left: 3px solid var(--color-accent);
 		color: var(--color-text-primary);
 		border-radius: 0 0 0 10px;
-	}
-}
-.event a,
-.exhibitions a {
-	color: var(--color-text-primary);
-}
-.event .card {
-	border: 2px solid var(--color-text-primary);
-	div:nth-child(1) {
-		background-size: cover;
-	}
-	.space {
-		background: url(/img/scientific-2040795_1280.jpg) darkblue;
-	}
-	.magic {
-		background: url(/img/learn-2405206_1920.jpg) darkblue;
+		transition: transform 0.2s;
 	}
 }
 
-.exhibitions .card {
-	border: 2px solid var(--color-text-primary);
-	div:nth-child(1) {
-		background-size: cover;
+.event {
+	a {
+		color: var(--color-text-primary);
 	}
-	.space {
-		background: url(/img/scientific-2040795_1280.jpg) darkblue;
-	}
-	.magic {
-		background: url(/img/learn-2405206_1920.jpg) darkblue;
+	.card {
+		border: 2px solid var(--color-text-primary);
+		div:nth-child(1) {
+			background-size: cover;
+		}
+		.space {
+			background: url(/img/scientific-2040795_1280.jpg) darkblue;
+		}
+		.magic {
+			background: url(/img/learn-2405206_1920.jpg) darkblue;
+		}
 	}
 }
+
 @media only screen and (min-width: 450px) {
 	.offer {
 		img {
@@ -146,12 +138,6 @@ header {
 	}
 
 	.event .card {
-		div:nth-child(1) {
-			height: 250px;
-		}
-	}
-
-	.exhibitions .card {
 		div:nth-child(1) {
 			height: 250px;
 		}
@@ -169,12 +155,6 @@ header {
 			height: 300px;
 		}
 	}
-
-	.exhibitions .card {
-		div:nth-child(1) {
-			height: 300px;
-		}
-	}
 }
 @media only screen and (min-width: 800px) {
 	.home {
@@ -188,23 +168,14 @@ header {
 		}
 		.card {
 			margin: 0;
+			div:nth-child(1) {
+				height: 250px;
+			}
 		}
 		.offer {
 			img {
 				height: 250px;
 				margin: 0;
-			}
-		}
-
-		.event .card {
-			div:nth-child(1) {
-				height: 250px;
-			}
-		}
-
-		.exhibitions .card {
-			div:nth-child(1) {
-				height: 250px;
 			}
 		}
 	}
@@ -213,7 +184,7 @@ header {
 	.hero img {
 		max-height: 400px;
 	}
-	h2 {
+	.hero h2 {
 		margin: 60px auto 40px auto;
 	}
 	section {
@@ -226,8 +197,7 @@ header {
 		margin: 0 auto;
 	}
 	.offer,
-	.event,
-	.exhibitions {
+	.event {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
@@ -242,22 +212,23 @@ form {
 	max-width: 700px;
 	margin: 0 auto;
 }
-label h3 {
-	display: inline-block;
-	width: 100px;
-	height: 45px;
-	line-height: 45px;
-	margin: 10px;
-	text-align: left;
-}
-label .message {
-	text-align: center;
-	width: 100%;
-	margin: 20px auto 0 auto;
+label {
+	h3 {
+		display: inline-block;
+		width: 100px;
+		height: 45px;
+		line-height: 45px;
+		margin: 10px;
+		text-align: left;
+	}
+	.message {
+		text-align: center;
+		width: 100%;
+		margin: 20px auto 0 auto;
+	}
 }
 input {
 	width: calc(100% - 140px);
-
 	height: 45px;
 	font-size: 20px;
 	padding-left: 10px;
@@ -284,6 +255,7 @@ textarea {
 }
 
 /* --- Contribution --- */
+
 .contribution {
 	div {
 		margin-top: 20px;
@@ -305,40 +277,37 @@ textarea {
 		color: var(--color-text-primary);
 		margin: 10px;
 	}
+	ul {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	li {
+		height: 400px;
+	}
 }
 @media only screen and (min-width: 450px) {
-	.contribution {
-		a {
-			margin: 20px;
-		}
+	.contribution a {
+		margin: 20px;
 	}
 }
 @media only screen and (min-width: 600px) {
-	.contribution {
-		a {
-			margin: 30px;
-		}
+	.contribution a {
+		margin: 30px;
 	}
 }
 @media only screen and (min-width: 800px) {
-	.contribution {
-		a {
-			margin: 40px;
-		}
+	.contribution a {
+		margin: 40px;
 	}
 }
 @media only screen and (min-width: 1000px) {
-	.contribution {
-		a {
-			margin: 50px;
-		}
+	.contribution a {
+		margin: 50px;
 	}
 }
 @media only screen and (min-width: 1200px) {
-	.contribution {
-		a {
-			margin: 60px;
-		}
+	.contribution a {
+		margin: 60px;
 	}
 }
 
@@ -375,7 +344,7 @@ textarea {
 	li {
 		border: 3px solid var(--color-secondary);
 		border-radius: 20px;
-		padding: 0 20px;
+		padding: 0 20px 20px 20px;
 		background-color: black;
 	}
 }
@@ -450,10 +419,8 @@ footer {
 	}
 }
 @media only screen and (min-width: 600px) {
-	footer {
-		ul {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-		}
+	footer ul {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
 @media only screen and (min-width: 800px) {
@@ -467,14 +434,15 @@ footer {
 /* --- About Us --- */
 
 .about_us {
-	section:first-of-type > div {
-		margin: 0 auto;
-		max-width: 1000px;
-	}
 	h3 {
 		text-align: left;
 		text-decoration: underline;
 	}
+	section:first-of-type > div {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
 	hr {
 		margin-top: 20px;
 	}
@@ -489,10 +457,8 @@ footer {
 		img {
 			object-position: center bottom;
 		}
-		.hours {
-			ul {
-				grid-template-columns: 1fr;
-			}
+		.hours ul {
+			grid-template-columns: 1fr;
 		}
 	}
 }
@@ -514,29 +480,23 @@ footer {
 	}
 }
 @media only screen and (min-width: 1000px) {
-	.hours {
-		ul {
-			grid-template-columns: 1fr;
-		}
+	.hours ul {
+		grid-template-columns: 1fr;
 	}
 }
 
 /* --- Events --- */
 
 @media only screen and (min-width: 800px) {
-	.events {
-		ul {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 40px;
-		}
+	.events ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
 	}
 }
 
 /* --- Kids --- */
 
-.kids {
-	img {
-		object-position: left;
-	}
+.kids img {
+	object-position: left;
 }
